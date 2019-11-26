@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>NTNT</title>
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/homePage.css?v=0.001">
+		<script src="js/homePage.js?v=0.001"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<div id="header">
+			<img src="images/logoHeader.PNG" alt="logoHeader">
+			<nav>
+				<ul id="menu">
+					<li>
+						<p><a href="">Home</a></p>
+						<hr>
+					</li>
+					<li>
+						<p><a href="">My Favorites</a></p>
+						<ul class="sub-menu">
+							<li>
+								<p><a href="">Films</a></p>
+								<ul class="sub-menu-indent">
+									<li>
+										<p><a href="">Naruto</a></p>
+									</li>
+									<li>
+										<p><a href="">Boruto</a></p>
+									</li>
+									<li>
+										<p><a href="">Doctor Who</a></p>
+									</li>
+									<li>
+										<p><a href="">Supernatural</a></p>
+									</li>
+									<li>
+										<p><a href="">The flash</a></p>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<p><a href="">Sports</a></p>
+								<ul class="sub-menu-indent">
+									<li>
+										<p><a href="">Table Tennis</a></p>
+									</li>
+									<li>
+										<p><a href="">Football</a></p>
+									</li>
+									<li>
+										<p><a href="">Badminton</a></p>
+									</li>
+									<li>
+										<p><a href="">Volleyball</a></p>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<p><a href="">Video games</a></p>
+								<ul class="sub-menu-indent">
+									<li>
+										<p><a href="#part4">Pubg Mobile</a></p>
+									</li>
+									<li>
+										<p><a href="#part5">Arena of Valor</a></p>
+									</li>
+									<li>
+										<p><a href="">Mobile Legend</a></p>
+									</li>
+									<li>
+										<p><a href="">Alphast 8</a></p>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<hr>
+					</li>
+					<li>
+						<p><a href="">My projects</a></p>
+						<ul class="sub-menu">
+							<li>
+								<p><a href="projects/project1/baucua.html">Project 1</a></p>
+							</li>
+							<li>
+								<p><a href="projects/project2/2048.html">Project 2</a></p>
+							</li>
+							<li>
+								<p><a href="">Project 3</a></p>
+							</li>
+							<li>
+								<p><a href="">Project 4</a></p>
+							</li>
+							<li>
+								<p><a href="">Project 5</a></p>
+							</li>
+							<li>
+								<p><a href="">Project 6</a></p>
+							</li>
+						</ul>
+						<hr>
+					</li>
+					<li>
+						<p><a href="">About me</a></p>
+						<hr>
+					</li>
+					<li>
+						<p><a href="loginPage.html">Login</a></p>
+					</li>
+				</ul>
+			</nav>
+			<nav>
+				<div id="mobile-menu-button">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+				<ul id="mobile-menu">
+					<li><a href="">Home</a></li>
+					<li><a href="">My Favorites</a></li>
+					<li><a href="">My Projects</a></li>
+					<li><a href="">About me</a></li>
+					<li><a href="">Log in</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="slide">
+			<input type="radio" name="img" id="img1" class="check-img" checked>
+			<input type="radio" name="img" id="img2" class="check-img">
+			<input type="radio" name="img" id="img3" class="check-img">
+			<input type="radio" name="img" id="img4" class="check-img">
+			<div id="next" onclick="next_img()">
+				<img src="images/next_icon.png" alt="next_icon">
+			</div>
+			<div id="prev" onclick="prev_img()">
+				<img src="images/previous_icon.png" alt="previous_icon">
+			</div>
+			<div id="list-images">	
+				<img src="images/img1.jpg" alt="image1">
+				<img src="images/img2.jpg" alt="image2">
+				<img src="images/img3.jpg" alt="image3">
+				<img src="images/img4.jpg" alt="image4">
+			</div>
+			<div id="list-button">
+				<label id="status-button1" class="status-button" for="img1"></label>
+				<label id="status-button2" class="status-button" for="img2"></label>
+				<label id="status-button3" class="status-button" for="img3"></label>
+				<label id="status-button4" class="status-button" for="img4"></label>
+			</div>
+		</div>
+		<div id="part1">
+			<div class="content">
+				<h1>THIS SITE&nbsp;</h1>
+				<h1>STORES&nbsp;</h1>
+				<h1>MY PROJECTS&#44;&#46;&#46;&#46;</h1>
+			</div>
+		</div>
+		<div id="part2">
+			<h1>MY PROJECT</h1>
+			<div id="container-project">
+				<img src="images/next_icon.png" alt="next_icon" onclick="next_project()">
+				<img src="images/previous_icon.png" alt="previous_icon" onclick="prev_project()">
+				<div id="list-project">
+					<div class="project" onclick="window.location = 'projects/project1/baucua.html'">
+						<h2>Project 1</h2>
+						<p>abcdxyza bcdxyzabcdxy zab cdx yzabcd xyzabcdxyz abcd xyzabcdxyzabcdxyzabc dxyz</p>
+					</div>
+					<div class="project" onclick="window.location = 'projects/project2/2048.html'">
+						<h2>Project 2</h2>
+						<p>abcdxyza bcdxyzabcdxy zab cdx yzabcd xyzabcdxyz abcd xyzabcdxyzabcdxyzabc dxyz</p>
+					</div>
+					<div class="project">
+						<h2>Project 3</h2>
+						<p>abcdxyza bcdxyzabcdxy zab cdx yzabcd xyzabcdxyz abcd xy zabcdx yzab cdxyzabc dxyz</p>
+					</div>
+					<div class="project">
+						<h2>Project 4</h2>
+						<p>abcdxyza bcdxyzabcdxy zab cdx yzabcd xyzabcdxyz abcd xyzabc dxyzabcdx yzabc dxyz</p>
+					</div>
+					<div class="project">
+						<h2>Project 5</h2>
+						<p>abcdxyza bcdxyzabcdxy zab cdx yzabcd xyzabcdxyz abcd xyzabcdxyzabcdxyzabc dxyz</p>
+					</div>
+					<div class="project">
+						<h2>Project 6</h2>
+						<p>abcdxyza bcdxyzabcdxy zab cdx yzabcd xyzabcdxyz abcd xyzabcdxyzabcdxyzabc dxyz</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="part3">
+			<div class="content">
+				<h1>SHOWS</h1>
+				<h1>SOME GAME</h1>
+				<h1>I'VE PLAYED</h1>
+			</div>
+		</div>
+		<!--  -->
+		<div id="part4" class="show-game">
+			<h1>Pubg Mobile Trailer</h1>
+			<iframe src="https://www.youtube.com/embed/uCd6tbUAy6o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<div class="list-store">
+				<p>Download:</p>
+				<a href="https://app.adjust.com/r75f0v" target="_blank"><img src="images/chplay.svg" alt="chplay"></a>
+				<a href="https://app.adjust.com/4yxckw" target="_blank"><img src="images/appleStore.svg" alt="appleStore"></a>
+				<a href="https://filecdn.igamecj.com/fclient/zs/iGame__NO45_0.12.0.11021_Shipping_Google_GLOBAL.signed.shell_UAWebsite.apk" target="_blank"><img src="images/android.svg" alt="android"></a>
+			</div>
+		</div>
+		<!--  -->
+		<div id="part5" class="show-game">
+			<h1>Areana Of Valor</h1>
+			<iframe src="https://www.youtube.com/embed/9aXDTq3moS8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<div class="list-store">
+				<p>Download:</p>
+				<a href="https://app.appsflyer.com/com.garena.game.kgvn?pid=OrganicA&c=obt_lp_and" target="_blank"><img src="images/chplay.svg" alt="chplay"></a>
+				<a href="https://app.appsflyer.com/id1150288115?pid=OragnicA&c=cbt_lp_ios" target="_blank"><img src="images/appleStore.svg" alt="appleStore"></a>
+			</div>
+		</div>
+		<!--  -->
+		<ul id="contact">
+			<li>
+				<a href="https://www.facebook.com/profile.php?id=100009922152597">Facebook</a>
+				<img src="images/facebook.svg" alt="facebook">
+			</li>
+			<li>
+				<a href="">Twitter</a>
+				<img src="images/twitter.svg" alt="twitter">
+			</li>
+			<li>
+				<a href="">Google +</a>
+				<img src="images/googlePlus.svg" alt="googlePlus">
+			</li>
+		</ul>
+		<div id="footer">
+			<a href="tel:0123456789">Phone: 0123456789</a>
+			<a href="https://www.google.com/maps/place/Bàu+Năng+11,+Hòa+Minh,+Liên+Chiểu,+Đà+Nẵng+550000,+Việt+Nam/@16.0659606,108.169631,18z/data=!4m8!1m2!2m1!1zMjIgYuG6p3UgbsSDbmcgMTE!3m4!1s0x3142191ee36f42fd:0xfd43a4192e8a7589!8m2!3d16.0650439!4d108.1697687" target="_blank">Address: Lien Chieu, Da Nang</a>
+			<a href="mailto:ninhthuan1999@gmail.com">Email: ninhthuan1999@gmail.com</a>
+		</div>
+	</body>
+</html>
