@@ -1,6 +1,9 @@
 ul{
     padding: 0;
 }
+.sbec-conversation__accept-reject{
+    display: flex;
+}
 .sbec-conversation__accept, .sbec-conversation__reject{
     width: 70px;
     height: 70px;
@@ -26,6 +29,9 @@ ul{
     box-shadow: 0px 0px 0px 7px #00cc66,
                 0px 0px 0px 13px #66ffb3;
     animation: shade_animation_reject 1s ease-in-out infinite alternate;
+}
+.sbec-conversation__calling{
+    display: none;
 }
 @keyframes shade_animation_accept{
     from{

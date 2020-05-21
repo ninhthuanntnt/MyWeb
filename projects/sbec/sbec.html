@@ -12,6 +12,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/8e2b436045.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <!-- CDN for call channel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/peerjs/1.2.0/peerjs.js"></script>
     <script src="js/bg_product.js"></script>
     <title>SBEC</title>
 </head>
@@ -106,7 +109,11 @@
                         <p>ID: 148214</p>
                     </div>
                     <div class="sbec-start-and-stop-conversation">
-                        <button class="btn btn-success">Start conversation</button>
+                        <audio id="audio_client" controls autoplay></audio>
+                        <br>
+                        <p id="status-call-to-admin">Waiting for consultant...</p>
+                        <button class="btn btn-danger" id="btn-stop-call-to-admin">Stop conversation</button>
+                        <button class="btn btn-success" id="btn-call-to-admin">Start conversation</button>
                     </div>
                     <div class="sbec-background-product">
                         <div class="sbec-background-product__upload mt-4">
@@ -129,8 +136,10 @@
                                         <div class="modal-body">
                                             <div class="input-group">
                                                 <div class="custom-file">
-                                                    <input type="file" class="custom-file-input" id="sbec-upload-background">
-                                                    <label class="custom-file-label" for="sbec-upload-background">Choose your background</label>
+                                                    <input type="file" class="custom-file-input"
+                                                        id="sbec-upload-background">
+                                                    <label class="custom-file-label" for="sbec-upload-background">Choose
+                                                        your background</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -139,7 +148,8 @@
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-danger"
                                                 data-dismiss="modal">Close</button>
-                                            <button class="btn btn-success" id="apply-background">Apply background</button>
+                                            <button class="btn btn-success" id="apply-background">Apply
+                                                background</button>
                                         </div>
 
                                     </div>
@@ -209,28 +219,6 @@
                                         1.500 $
                                     </p>
                                 </div>
-                                <div class="sbec-product-card sbec-product-card--border swiper-slide">
-                                    <div class=" sbec-product-card__image">
-                                        <img src="images/products/product.jpg" alt="product">
-                                    </div>
-                                    <p class="sbec-product-card__name">
-                                        Modern table
-                                    </p>
-                                    <p class="sbec-product-card__price">
-                                        1.500 $
-                                    </p>
-                                </div>
-                                <div class="sbec-product-card sbec-product-card--border swiper-slide">
-                                    <div class=" sbec-product-card__image">
-                                        <img src="images/products/product.jpg" alt="product">
-                                    </div>
-                                    <p class="sbec-product-card__name">
-                                        Modern table
-                                    </p>
-                                    <p class="sbec-product-card__price">
-                                        1.500 $
-                                    </p>
-                                </div>
                             </div>
                             <div class="swiper-pagination"></div>
                             <div class="swiper-button-next"></div>
@@ -241,36 +229,61 @@
             </div>
         </div>
     </div>
-
+    <script src="js/ws_recommended_product.js"></script>
+    <!-- <script>
+        socket.on('recommend-product', function (products) {
+            console.log(products);
+            let $swiperWrapper = $('.swiper-wrapper');
+            $swiperWrapper.html('');
+            for (let i = 0; i < products.length; i++) {
+                $swiperWrapper.append(`<div class="sbec-product-card sbec-product-card--border swiper-slide">
+                                            <div class=" sbec-product-card__image">
+                                                <img src="${products[i].imagePath}" alt="product">
+                                            </div>
+                                            <p class="sbec-product-card__name">
+                                                ${products[i].name}
+                                            </p>
+                                            <p class="sbec-product-card__price">
+                                                ${products[i].price} $
+                                            </p>
+                                        </div>` );
+            }
+            initSwiper();
+        });
+    </script> -->
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script>
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
+        initSwiper();
+        function initSwiper() {
+            let swiper = new Swiper('.swiper-container', {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
                 },
-                768: {
-                    slidesPerView: 3,
-                    spaceBetween: 40,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
                 },
-                1024: {
-                    slidesPerView: 4,
-                    spaceBetween: 50,
+                breakpoints: {
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 40,
+                    },
+                    1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 50,
+                    },
                 },
-            },
-        });
+            });
+        }
     </script>
+    <script src="js/cl_start_call_to_admin.js"></script>
 </body>
 
 </html>
