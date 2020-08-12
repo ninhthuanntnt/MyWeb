@@ -6,7 +6,6 @@ $('#btn-accept-call').on('click', function () {
     socket.emit('admin-accept-call-request-to-server', adminId);
 
     socket.on('client-admin-calling-response', function () {
-      //
 
       const getUserMedia = (navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia).bind(navigator);
 
@@ -16,8 +15,8 @@ $('#btn-accept-call').on('click', function () {
           call.answer(stream); // Answer the call with an A/V stream.
           call.on('stream', function (remoteStream) {
             // Show stream in some video/canvas element.
-            
-            playStream('audio_admin',remoteStream);
+
+            playStream('audio_admin', remoteStream);
           });
         }, function (err) {
           console.log('Failed to get local stream', err);
@@ -27,7 +26,7 @@ $('#btn-accept-call').on('click', function () {
   });
 });
 
-socket.on('server-sent-request-to-admin', function() {
+socket.on('server-sent-request-to-admin', function () {
   $('body').append(`<script>
                           window.location = 'admin/ad_call_channel';
                     </script>`);

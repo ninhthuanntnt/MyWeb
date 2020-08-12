@@ -6,7 +6,7 @@ peer.on('open', function(){
 
 $('#btn-call-to-admin').on('click', function() {
   console.log('click');
-  socket.emit('client-request-call-to-server');
+  socket.emit('client-request-call-to-server', {id: 1});
   $(this).fadeToggle();
   $('#audio_client').fadeToggle();
   $('#status-call-to-admin').fadeToggle();
