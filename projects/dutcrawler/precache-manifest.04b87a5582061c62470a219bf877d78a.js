@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a0cb7a8458fd85eb5bb335fb0aeeb445",
+    "revision": "1e99d3638b35d629938aca71460d0294",
     "url": "/MyWeb/projects/dutcrawler/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/MyWeb/projects/dutcrawler/static/css/2.d9ad5f5c.chunk.css"
   },
   {
-    "revision": "69d2343fb28c354495eb",
+    "revision": "bd314cc44cd3438fdc27",
     "url": "/MyWeb/projects/dutcrawler/static/css/main.357d975c.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/MyWeb/projects/dutcrawler/static/js/2.05a3d32e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "69d2343fb28c354495eb",
-    "url": "/MyWeb/projects/dutcrawler/static/js/main.3dea0696.chunk.js"
+    "revision": "bd314cc44cd3438fdc27",
+    "url": "/MyWeb/projects/dutcrawler/static/js/main.fec3a184.chunk.js"
   },
   {
     "revision": "783890b9c6f7aff80aba",
