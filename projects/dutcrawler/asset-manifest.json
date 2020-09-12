@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "./static/css/main.357d975c.chunk.css",
+    "main.js": "./static/js/main.e8690620.chunk.js",
+    "main.js.map": "./static/js/main.e8690620.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.527629c2.js",
+    "runtime-main.js.map": "./static/js/runtime-main.527629c2.js.map",
+    "static/css/2.d9ad5f5c.chunk.css": "./static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.05a3d32e.chunk.js": "./static/js/2.05a3d32e.chunk.js",
+    "static/js/2.05a3d32e.chunk.js.map": "./static/js/2.05a3d32e.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.779fccebae792312e530d3d062e1e073.js": "./precache-manifest.779fccebae792312e530d3d062e1e073.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/2.d9ad5f5c.chunk.css.map": "./static/css/2.d9ad5f5c.chunk.css.map",
+    "static/css/main.357d975c.chunk.css.map": "./static/css/main.357d975c.chunk.css.map",
+    "static/js/2.05a3d32e.chunk.js.LICENSE.txt": "./static/js/2.05a3d32e.chunk.js.LICENSE.txt",
+    "static/media/Calendar.jpg": "./static/media/Calendar.cfecb6b0.jpg",
+    "static/media/notification.png": "./static/media/notification.5e1d61e5.png",
+    "static/media/score.png": "./static/media/score.c4d1e3a9.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.527629c2.js",
+    "static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.05a3d32e.chunk.js",
+    "static/css/main.357d975c.chunk.css",
+    "static/js/main.e8690620.chunk.js"
+  ]
+}
