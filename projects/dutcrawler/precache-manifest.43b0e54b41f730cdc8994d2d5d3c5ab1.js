@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dc036b67ed1482e6bdb92fcec3a9f30e",
+    "revision": "c13e0126b9f8a8bcbf61deab68d3f256",
     "url": "/MyWeb/projects/dutcrawler/index.html"
   },
   {
-    "revision": "db0ea8c12767baeb8743",
+    "revision": "cc889f9644d3b21acf40",
     "url": "/MyWeb/projects/dutcrawler/static/css/2.d9ad5f5c.chunk.css"
   },
   {
-    "revision": "170e9990dbda666e1832",
+    "revision": "571719aab6f40f86403e",
     "url": "/MyWeb/projects/dutcrawler/static/css/main.357d975c.chunk.css"
   },
   {
-    "revision": "db0ea8c12767baeb8743",
-    "url": "/MyWeb/projects/dutcrawler/static/js/2.05a3d32e.chunk.js"
+    "revision": "cc889f9644d3b21acf40",
+    "url": "/MyWeb/projects/dutcrawler/static/js/2.7ef7c559.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/MyWeb/projects/dutcrawler/static/js/2.05a3d32e.chunk.js.LICENSE.txt"
+    "url": "/MyWeb/projects/dutcrawler/static/js/2.7ef7c559.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "170e9990dbda666e1832",
-    "url": "/MyWeb/projects/dutcrawler/static/js/main.bc8dbde5.chunk.js"
+    "revision": "571719aab6f40f86403e",
+    "url": "/MyWeb/projects/dutcrawler/static/js/main.1231c5f6.chunk.js"
   },
   {
     "revision": "783890b9c6f7aff80aba",
