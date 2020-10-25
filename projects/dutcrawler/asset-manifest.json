@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/MyWeb/projects/dutcrawler/static/css/main.357d975c.chunk.css",
-    "main.js": "/MyWeb/projects/dutcrawler/static/js/main.0fb9f581.chunk.js",
-    "main.js.map": "/MyWeb/projects/dutcrawler/static/js/main.0fb9f581.chunk.js.map",
+    "main.js": "/MyWeb/projects/dutcrawler/static/js/main.50208ba1.chunk.js",
+    "main.js.map": "/MyWeb/projects/dutcrawler/static/js/main.50208ba1.chunk.js.map",
     "runtime-main.js": "/MyWeb/projects/dutcrawler/static/js/runtime-main.dfbe3c72.js",
     "runtime-main.js.map": "/MyWeb/projects/dutcrawler/static/js/runtime-main.dfbe3c72.js.map",
     "static/css/2.d9ad5f5c.chunk.css": "/MyWeb/projects/dutcrawler/static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.b60d8c69.chunk.js": "/MyWeb/projects/dutcrawler/static/js/2.b60d8c69.chunk.js",
     "static/js/2.b60d8c69.chunk.js.map": "/MyWeb/projects/dutcrawler/static/js/2.b60d8c69.chunk.js.map",
     "index.html": "/MyWeb/projects/dutcrawler/index.html",
-    "precache-manifest.d55974f196d33e99d8484292586b3883.js": "/MyWeb/projects/dutcrawler/precache-manifest.d55974f196d33e99d8484292586b3883.js",
+    "precache-manifest.936ab6a8ab7729745bf2ca1a82740d10.js": "/MyWeb/projects/dutcrawler/precache-manifest.936ab6a8ab7729745bf2ca1a82740d10.js",
     "service-worker.js": "/MyWeb/projects/dutcrawler/service-worker.js",
     "static/css/2.d9ad5f5c.chunk.css.map": "/MyWeb/projects/dutcrawler/static/css/2.d9ad5f5c.chunk.css.map",
     "static/css/main.357d975c.chunk.css.map": "/MyWeb/projects/dutcrawler/static/css/main.357d975c.chunk.css.map",
@@ -23,6 +23,6 @@
     "static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.b60d8c69.chunk.js",
     "static/css/main.357d975c.chunk.css",
-    "static/js/main.0fb9f581.chunk.js"
+    "static/js/main.50208ba1.chunk.js"
   ]
 }
