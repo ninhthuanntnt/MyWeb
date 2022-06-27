@@ -1,0 +1,151 @@
+.banner-img {
+    width: 100%;
+    height: 600px;
+
+    background: url("../img/banner.jpg") no-repeat;
+    background-size: cover;
+
+    overflow: hidden;
+
+    position: relative;
+
+    margin-top: -16px;
+}
+
+.banner-img__quote {
+    position: absolute;
+    width: 100%;
+
+    text-align: center;
+
+    top: 100px;
+
+    font-family: 'Pacifico', cursive;
+    color: #545454;
+
+    font-size: 3em;
+}
+
+.introduce {
+    margin-top: 30px;
+
+    position: relative;
+}
+
+.card-introduce {
+    width: 44%;
+}
+
+.self-introduce__name {
+    font-size: 2em;
+}
+
+.web-card-header {
+    width: 100%;
+
+    position: relative;
+}
+
+.web-card-header:after {
+    content: "";
+    background: #ccc;
+    height: 1px;
+    width: 80%;
+
+    position: absolute;
+    bottom: 0;
+}
+
+.web-card-body {
+    padding: 20px;
+}
+
+.header-introduce__avatar {
+    margin: 20px 0;
+}
+
+.thuan-avatar-introduce {
+    width: 150px;
+    height: 150px;
+    background: url("../img/thuan_avatar.jpg") no-repeat;
+    background-size: cover;
+}
+
+.hoi-avatar-introduce {
+    width: 150px;
+    height: 150px;
+    background: url("../img/hoi_avatar.jpg") no-repeat;
+    background-size: cover;
+}
+
+#introduce-lottie-heart-animation {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    z-index: 99;
+
+    transform: translate(-50%, -40%);
+}
+
+.love-counter__title {
+    font-size: 2.5em;
+}
+
+.love-counter__element-heart {
+    width: 100px;
+    height: 100px;
+    background: url("../img/heart.svg") no-repeat;
+    background-size: contain;
+
+    color: white;
+    font-size: 1.5em;
+}
+
+
+/*Love story*/
+
+.story-row {
+    margin: 2em 0;
+}
+
+.story-row__image {
+    width: 300px;
+    height: 300px;
+}
+
+.first-dating-image {
+    background: url("../img/story/first-dating-image.jpg") no-repeat;
+    background-size: cover;
+}
+
+.second-dating-image {
+    background: url("../img/story/second-dating-image.jpg") no-repeat;
+    background-size: cover;
+}
+
+.story-row__date {
+    font-size: 2em;
+
+    background-color: white;
+}
+
+.story-row__note {
+    font-size: 1.2em;
+}
+
+.love-story {
+    position: relative;
+}
+
+.love-story-vertical-line {
+    position: absolute;
+
+    width: 50%;
+    height: calc(100% - 100px);
+    border-right: 1px solid #ccc;
+
+    top: 100px;
+    left: 0;
+    z-index: -1;
+}
