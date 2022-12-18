@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/header.css?ver=0.0.2">
     <link rel="stylesheet" href="css/menu.css?ver=0.0.2">
     <link rel="stylesheet" href="css/body.css?ver=0.0.2">
+    <link rel="stylesheet" href="css/rb3d.css?ver=0.0.2">
     <link rel="stylesheet" href="css/gallery-image.css?ver=0.0.2">
     <link rel="stylesheet" href="css/vendor/photoswipe.css?ver=0.0.2">
 
@@ -23,7 +24,7 @@
 
 <body>
     <script>
-        if(!window.location.href.includes('?ver=0.0.2')) {
+        if (!window.location.href.includes('?ver=0.0.2')) {
             window.location = window.location + "?ver=0.0.2"
         }
     </script>
@@ -56,7 +57,11 @@
         </menu>
     </div>
     <div class="banner-img">
-        <span class="banner-img__quote">Best wishes for a speedy recovery.</span>
+        <span class="banner-img__quote">
+            Happy birthday my little girl.
+            <br>
+            I have a big surprise for you.
+        </span>
     </div>
 
     <div class="introduce web-container d-flex justify-content-between">
@@ -90,7 +95,33 @@
         <div class="card card-introduce d-flex flex-column align-items-center">
             <div class="web-card-header d-flex justify-content-around align-items-center">
                 <div class="header-introduce__avatar">
-                    <div class="hoi-avatar-introduce rounded-circle">
+                    <div class="hoi-avatar-introduce rounded-circle"></div>
+                    <div id="happy-birthday-bh-gift" data-bs-toggle="modal" data-bs-target="#exampleModal"></div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Happy birthday BH</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form onsubmit="handleSubmitPasswordGift(event)">
+                                        <div class="mb-3">
+                                            <label for="bh-birthday">Your phone password:</label>
+                                            <input id="bh-birthday" type="password" class="form-control"/>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -286,6 +317,7 @@
     <script src="js/vendor/photowipe/umd/photoswipe.umd.min.js?ver=0.0.2"></script>
     <script src="js/vendor/photowipe/umd/photoswipe-lightbox.umd.min.js?ver=0.0.2"></script>
     <script src="js/our-gallery.js?ver=0.0.2"></script>
+    <script src="js/form_handler.js?ver=0.0.2"></script>
 </body>
 
 </html>

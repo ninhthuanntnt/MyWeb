@@ -1,0 +1,69 @@
+:root{
+    --rb3d-1-deep: 1px;
+    --rb3d-2-deep: 2px;
+    --rb3d-3-deep: 3px;
+    --rb3d-4-deep: 4px;
+    --rb3d-5-deep: 5px;
+    
+    --rb3d-1-negative-deep: -1px;
+    --rb3d-2-negative-deep: -2px;
+    --rb3d-3-negative-deep: -3px;
+    --rb3d-4-negative-deep: -4px;
+    --rb3d-5-negative-deep: -5px;
+}
+
+.rb3d-1 {
+    letter-spacing: var(--rb3d-1-deep); 
+    text-shadow: var(--rb3d-1-negative-deep) 0 1px rgba(255,0,0,0.67), var(--rb3d-1-deep) 0 1px rgba(0, 255, 255, 0.67);
+}
+
+.rb3d-2 {
+    letter-spacing: var(--rb3d-2-deep); 
+    text-shadow: var(--rb3d-2-negative-deep) 0 1px rgba(255,0,0,0.67), var(--rb3d-2-deep) 0 1px rgba(0, 255, 255, 0.67);
+}
+
+.rb3d-3 {
+    letter-spacing: var(--rb3d-3-deep); 
+    text-shadow: var(--rb3d-3-negative-deep) 0 1px rgba(255,0,0,0.67), var(--rb3d-3-deep) 0 1px rgba(0, 255, 255, 0.67);
+}
+
+.rb3d-4 {
+    letter-spacing: var(--rb3d-4-deep); 
+    text-shadow: var(--rb3d-4-negative-deep) 0 1px rgba(255,0,0,0.67), var(--rb3d-4-deep) 0 1px rgba(0, 255, 255, 0.67);
+}
+
+.rb3d-5 {
+    letter-spacing: var(--rb3d-5-deep); 
+    text-shadow: var(--rb3d-5-negative-deep) 0 1px rgba(255,0,0,0.67), var(--rb3d-5-deep) 0 1px rgba(0, 255, 255, 0.67);
+}
+
+
+.rb3d-bold-1 {
+    font-weight: bold;
+    letter-spacing: var(--rb3d-1-deep); 
+    text-shadow: var(--rb3d-1-negative-deep) 0 1px rgba(255,0,0,0.67), var(--rb3d-1-deep) 0 1px rgba(0, 255, 255, 0.67);
+}
+
+.rb3d-bold-2 {
+    font-weight: bold;
+    letter-spacing: var(--rb3d-2-deep); 
+    text-shadow: var(--rb3d-2-negative-deep) 0 1px rgba(255,0,0,0.67), var(--rb3d-2-deep) 0 1px rgba(0, 255, 255, 0.67);
+}
+
+.rb3d-bold-3 {
+    font-weight: bold;
+    letter-spacing: var(--rb3d-3-deep); 
+    text-shadow: var(--rb3d-3-negative-deep) 0 1px rgba(255,0,0,0.67), var(--rb3d-3-deep) 0 1px rgba(0, 255, 255, 0.67);
+}
+
+.rb3d-bold-4 {
+    font-weight: bold;
+    letter-spacing: var(--rb3d-4-deep); 
+    text-shadow: var(--rb3d-4-negative-deep) 0 1px rgba(255,0,0,0.67), var(--rb3d-4-deep) 0 1px rgba(0, 255, 255, 0.67);
+}
+
+.rb3d-bold-5 {
+    font-weight: bold;
+    letter-spacing: var(--rb3d-5-deep); 
+    text-shadow: var(--rb3d-5-negative-deep) 0 1px rgba(255,0,0,0.67), var(--rb3d-5-deep) 0 1px rgba(0, 255, 255, 0.67);
+}
